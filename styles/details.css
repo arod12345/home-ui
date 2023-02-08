@@ -1,0 +1,39 @@
+.details-main-wrap {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  height: 80vh;
+}
+.details-main-wrap h1 {
+  font-weight: bold;
+  font-size: 30px;
+  /* align-self: flex-start; */
+  text-decoration: underline;
+  color: #6495ed;
+}
+.gallery {
+  width: 80%;
+  height: 80%;
+  padding: 1em;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.5em;
+  overflow: hidden;
+}
+.prt {
+  background-color: #13131360;
+  border-radius: 0.85em;
+}
+.one {
+  grid-area: span 2;
+}
+.content {
+  width: 80%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+.content p {
+  width: 50%;
+}

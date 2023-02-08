@@ -1,0 +1,248 @@
+.home-header {
+  width: 100%;
+  align-items: center;
+  padding: 0.5em;
+  justify-content: space-between;
+}
+.search-wrap {
+  border-radius: 100vmax;
+  padding: 0.3em;
+  padding-right: 1.5em;
+  box-shadow: 1px 3px 2px 1px #13131320;
+  align-items: center;
+  background-color: #ffe;
+}
+.search-wrap:hover {
+  border: 1px solid var(--clr-dark-bg);
+}
+.home-header input {
+  border-top-left-radius: 100vmax;
+  border-bottom-left-radius: 100vmax;
+  padding: 0.5em;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.home-header input::placeholder {
+  color: var(--clr-dark-bg);
+}
+.search-icon {
+  margin-left: 0.6em;
+  margin-right: -0.9em;
+  cursor: pointer;
+  padding: 0.35em;
+  background-color: #ff0000;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.lens {
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+}
+.filter {
+  width: 65%;
+  overflow: hidden;
+  /* background: #77777710; */
+  padding: 0.5em;
+  border-radius: 1vmax;
+  box-shadow: 1px 2px 2px #00000020;
+}
+.filter-btn {
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  overflow: hidden;
+}
+.filter-btn .fl-icon {
+  width: 1em;
+  height: 1em;
+  object-fit: contain;
+}
+
+.coursel {
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25em;
+}
+.coursel .icons {
+  width: 4em;
+  height: 2.5em;
+  object-fit: contain;
+  cursor: pointer;
+  position: relative;
+  padding: 0.3em;
+  border-radius: 0.5em;
+}
+.coursel .icons:hover {
+  background: #00000030;
+}
+.coursel .icons::after {
+  content: "dope";
+  position: absolute;
+  width: 2em;
+  height: 3em;
+  background-color: #000;
+}
+.home-main {
+  align-items: center;
+  justify-content: center;
+  padding: 0.35em;
+  width: 100%;
+}
+.home-main-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  width: 100%;
+}
+/* card-style */
+.hyper-link {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  width: 25em;
+  aspect-ratio: 1;
+  border-radius: 1em;
+  padding: 0.5em;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25em 0.15em;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-pic {
+  height: 75%;
+  width: 97%;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.card-pic .poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-desc {
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 95%;
+  padding: 0.25em;
+}
+.rv-loc {
+  align-items: center;
+  justify-content: space-between;
+}
+.location {
+  font-size: 18px;
+  font-weight: bold;
+}
+.review {
+  align-items: center;
+}
+.review .str-icon {
+  width: 2em;
+  height: 1em;
+}
+.pr-book {
+  align-items: center;
+  justify-content: space-between;
+}
+.price {
+  font-weight: bold;
+}
+.book {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0.35em 0.75em;
+  border: 1px solid #000;
+  border-radius: 100vmax;
+  background: none;
+  cursor: pointer;
+}
+.book:hover {
+  background: #13131320;
+}
+/* .card-pic .poster:hover{
+  object-fit: contain;
+} */
+.card:hover {
+  transform: scale(1.06, 1.06);
+  box-shadow: 0px 10px 12px 8px rgba(0, 0, 0, 0.1);
+}
+/* card-style */
+@media screen and (max-width: 1200px) {
+  .home-main-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+  .card {
+    width:27em;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home-main-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .card {
+    width: 20em;
+    /* height: 100%; */
+  }
+  /* .card:hover {
+    transform: none;
+  } */
+}
+@media screen and (max-width: 550px) {
+  .home-main {
+    padding: 0;
+  }
+  .home-main-grid {
+    grid-template-columns: 1fr;
+  }
+  .home-header{
+    justify-content: center;
+  }
+  .filter-btn{
+    justify-content: center;
+  }
+  .filter-btn p{
+    display:none;
+  }
+  .search-wrap{
+    display:none;
+  }
+  .filter{
+    width:100%;
+  }
+  .card {
+    width: 100%;
+    height: 25em;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
+.more {
+  margin: 1.2em 0;
+  padding: 0.5em;
+  border: 2px solid #000;
+  background: transparent;
+  border-radius: 0.5em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.more:hover {
+  background-color: #00000020;
+}

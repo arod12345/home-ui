@@ -1,0 +1,84 @@
+.sgn-wrapper {
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.sgn-card {
+  width: 50em;
+  height: 30em;
+  border-radius: 1em;
+  /* background-color: #13131330; */
+  position: absolute;
+  align-items: center;
+  overflow: hidden;
+  border:1px solid #00000020;
+}
+.card-pic-part {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.card-pic-part .illustration {
+  width: 95%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+.card-form-part {
+  width: 50%;
+  height: 100%;
+  /* background-color: #0000ff40; */
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5em;
+  overflow: hidden;
+}
+.card-form-part h1 {
+  font-size: 35px;
+}
+.card-form-part form {
+  width: 95%;
+  height: 90%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-form-part form input {
+  margin: 0.55em 0;
+  padding: 0.5em 1.4em;
+  border-radius: 100vmax;
+  border: 1px solid #000;
+}
+.card-form-part form button {
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  border-radius: 0.75em;
+  border: none;
+  cursor: pointer;
+  width:60%;
+  background-color:blue;
+  color: #fff;
+}
+@media screen and (max-width: 1100px) {
+  .sgn-card {
+    width: 30em;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .sgn-card {
+    width: 30em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .sgn-wrapper {
+    padding: 1em;
+  }
+  .sgn-card {
+    width: 100%;
+  }
+}
