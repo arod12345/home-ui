@@ -10,11 +10,13 @@ const Card = ({
     rentFrequency,
     score,
     title,
-    location: { name, name_l1 },
+    category: { name },
+    type,
     baths,
     area,
     agency,
     isVerified,
+    indyScore,
     externalID
   }
 }) => {
@@ -26,31 +28,28 @@ const Card = ({
             loading="lazy"
             className="poster"
             src={coverPhoto ? coverPhoto.url : { House2 }}
-            // src={House2}
             width={400}
             height={260}
           />
         </div>
         <div className="card-desc flex">
           <div className="rv-loc flex">
-            <div className="location">
-              {title}
-              {/* Italy,sccilly */}
-            </div>
+            <div className="location">{title}</div>
             <div className="review flex">
               <Image className="str-icon" src={StarIcon} />
-              <p>
-                {score}
-                {/* 4.5 */}
-              </p>
+              <p>{indyScore}</p>
             </div>
           </div>
-          <div className="title">Type</div>
+          <div
+            style={{ fontWeight: "bold", color: "#0000ff85" }}
+            className="title"
+          >
+            AREA | {Math.floor(area)} m²
+          </div>
           <div className="pr-book flex">
-            <p className="price">
+            <p style={{ color: "#ff000085" }} className="price">
               USD {price}
               {rentFrequency && `/${rentFrequency}`}
-              {/* USD 678 */}
             </p>
             <button className="book">Book now</button>
           </div>

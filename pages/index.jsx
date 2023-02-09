@@ -53,7 +53,7 @@ const index = ({ propertiesForRent }) => {
 };
 export async function getStaticProps() {
   const propertyForRent = await fetchApi(
-    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=24`
+    `${baseUrl}/properties/list?locationExternalIDs=5002&purpose=for-rent&hitsPerPage=18`
   );
 
   return {
