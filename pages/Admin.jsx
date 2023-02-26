@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { SideBar,EventSideBar } from "../component";
+import { SideBar, EventSideBar } from "../component";
 import {
   logOut,
   gridIcon,
@@ -8,7 +8,8 @@ import {
   Home,
   SettingIcon,
   Folder,
-  Menu
+  Menu,
+  StatPic
 } from "../assets";
 
 const Admin = () => {
@@ -22,8 +23,8 @@ const Admin = () => {
             className="property cd"
           >
             <div className="iconsbar">
-              <Image src={Home} />
-              <Image src={Menu} />
+              <Image src={Home} alt="" />
+              <Image src={Menu} alt=""/>
             </div>
             <h1>
               28000 +
@@ -36,8 +37,8 @@ const Admin = () => {
             className="record cd"
           >
             <div className="iconsbar">
-              <Image src={Folder} />
-              <Image src={Menu} />
+              <Image src={Folder} alt="" />
+              <Image src={Menu} alt=""/>
             </div>
             <h1>
               1 Millions+
@@ -50,8 +51,8 @@ const Admin = () => {
             className="hw-owner cd"
           >
             <div className="iconsbar">
-              <Image src={User} />
-              <Image src={Menu} />
+              <Image src={User}alt="" />
+              <Image src={Menu}alt="" />
             </div>
             <h1>
               over half Million
@@ -72,10 +73,22 @@ const Admin = () => {
               <p>Year</p>
             </>
             <>
-              <Image src={Menu} />
+              <Image src={Menu} alt=""/>
             </>
           </div>
-          <div className="graph"></div>
+          <div className="graph">
+            <Image
+              src={StatPic}
+              style={{
+                width: "100%",
+                // opacity:"80%",
+                height: "250%",
+                objectFit: "cover",
+                borderBottom: "1px solid red"
+              }}
+              alt=""
+            />
+          </div>
         </div>
         <div className="tr-part flex">
           <div className="site-stat flex">
@@ -89,7 +102,24 @@ const Admin = () => {
               <div className="dp"></div>
             </div>
           </div>
-          <div className="site-speed"></div>
+          <div className="site-speed flex">
+            <label htmlFor="progress">Site stst</label>
+            <progress
+              value="50"
+              max="100"
+              style={{ width: "80%", height: "1.5em" }}
+            ></progress>
+            <progress
+              value="80"
+              max="100"
+              style={{color:"red", width: "80%", height: "1.5em" }}
+            ></progress>
+            <progress
+              value="20"
+              max="100"
+              style={{ width: "80%", height: "1.5em" }}
+            ></progress>
+          </div>
         </div>
       </div>
       <EventSideBar />

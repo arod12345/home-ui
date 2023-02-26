@@ -30,6 +30,7 @@ const Card = ({
             src={coverPhoto ? coverPhoto.url : { House2 }}
             width={400}
             height={260}
+            alt=""
           />
         </div>
         <div className="card-desc flex">

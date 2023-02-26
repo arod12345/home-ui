@@ -30,7 +30,7 @@ const Login = () => {
     <div className="sgn-wrapper flex">
       <div className="sgn-card flex">
         <div className="card-pic-part flex">
-          <Image className="illustration" src={LoginIllustration} />
+          <Image alt="" className="illustration" src={LoginIllustration} />
         </div>
         <div className="card-form-part flex">
           <h1>Log In</h1>
@@ -55,7 +55,7 @@ const Login = () => {
             </div>
             <button type="submit">Login</button>
             <p>
-              Does'nt Have an Account?<Link href="/signin">Sign Up.</Link>
+              Doesnt Have an Account?<Link href="/signin">Sign Up.</Link>
             </p>
             {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
             {succesful && (

@@ -15,6 +15,8 @@ import { SearchIcon, FilterIcon } from "../assets";
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 
 const index = ({ propertiesForRent }) => {
+  // const video =
+  //   "";
   return (
     <>
       <header className="home-header flex">
@@ -30,13 +32,28 @@ const index = ({ propertiesForRent }) => {
             <p>filters</p>
           </button>
           <div className="coursel flex">
-            <Image className="icons" title="beach" src={Beach} />
-            <Image className="icons" title="lighthouse" src={LightHouse} />
-            <Image className="icons" title="villa" src={villa} />
-            <Image className="icons" title="castel" src={Castel} />
-            <Image className="icons" title="boat house" src={BoatHouse} />
-            <Image className="icons" title="country side" src={CountrySide} />
-            <Image className="icons" title="Breakfast" src={Breakfast} />
+            <Image alt="" className="icons" title="beach" src={Beach} />
+            <Image
+              alt=""
+              className="icons"
+              title="lighthouse"
+              src={LightHouse}
+            />
+            <Image alt="" className="icons" title="villa" src={villa} />
+            <Image alt="" className="icons" title="castel" src={Castel} />
+            <Image
+              alt=""
+              className="icons"
+              title="boat house"
+              src={BoatHouse}
+            />
+            <Image
+              alt=""
+              className="icons"
+              title="country side"
+              src={CountrySide}
+            />
+            <Image alt="" className="icons" title="Breakfast" src={Breakfast} />
           </div>
         </div>
       </header>

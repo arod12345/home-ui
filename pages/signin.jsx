@@ -32,7 +32,7 @@ const SignUp = () => {
     <div className="sgn-wrapper flex">
       <div className="sgn-card flex">
         <div className="card-pic-part flex">
-          <Image className="illustration" src={SignIllustration} />
+          <Image className="illustration" alt=""src={SignIllustration} />
         </div>
         <div className="card-form-part flex">
           <h1>Sign Up</h1>

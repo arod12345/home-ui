@@ -8,11 +8,11 @@ const EventSideBar = () => {
     <div className="event-holder flex">
       <div className="profile flex">
         <div className="pr-pic">
-          <Image className="img" src={User} />
+          <Image className="img" src={Ian} alt=""/>
         </div>
         <div className="text">
           <p style={{ fontSize: "20px", fontWeight: "bold" }}>Admin</p>
-          <p>Jhon Doe</p>
+          <p>Abel Sisay</p>
         </div>
       </div>
       <div className="card-call flex">
@@ -24,15 +24,21 @@ const EventSideBar = () => {
           Recent Registry
         </h1>
         <span className="wro">
-          <span className="pic-dl"></span>
+          <span className="pic-dl">
+          <Image className="img" src={Random} alt=""/>
+          </span>
           <span className="txt">Ivan&nbsp;Doord</span>
         </span>
         <span className="wro">
-          <span className="pic-dl"></span>
+          <span className="pic-dl">
+          <Image className="img" src={Christopher} alt="" />
+          </span>
           <span className="txt">Angela&nbsp;joe</span>
         </span>
         <span className="wro">
-          <span className="pic-dl"></span>
+          <span className="pic-dl">
+          <Image className="img" src={Edward}alt="" />
+          </span>
           <span className="txt">Deed&nbsp;Frank</span>
         </span>
       </div>
